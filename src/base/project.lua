@@ -490,6 +490,16 @@
 				prefix = "lib"
 				ext = ".a"
 			end
+		elseif namestyle == "android" then
+			if kind == "ConsoleApp" or kind == "WindowedApp" then
+				ext = ""
+			elseif kind == "SharedLib" then
+				prefix = "lib"
+				ext = ".so"
+			elseif kind == "StaticLib" then
+				prefix = "lib"
+				ext = ".a"
+			end
 		end
 			
 		prefix = cfg[field.."prefix"] or cfg.targetprefix or prefix

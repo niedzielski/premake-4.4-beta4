@@ -49,6 +49,12 @@
 		"actions/make/make_solution.lua",
 		"actions/make/make_cpp.lua",
 		"actions/make/make_csharp.lua",
+
+		-- android action
+		"actions/jni/_jni.lua",
+		"actions/jni/jni_cpp.lua",
+		"actions/jni/jni_solution.lua",
+		"actions/jni/jni_makefile.lua",
 		
 		-- Visual Studio actions
 		"actions/vstudio/_vstudio.lua",

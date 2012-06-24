@@ -80,6 +80,17 @@
 			ar         = "ppu-lv2-ar",
 			cppflags   = "-MMD",
 		},
+		Android = {
+			cc         = "/opt/android-toolchain/bin/arm-linux-androideabi-gcc",
+			cxx        = "/opt/android-toolchain/bin/arm-linux-androideabi-g++",
+			ar         = "/opt/android-toolchain/bin/arm-linux-androideabi-ar",
+			ld		   = "/opt/android-toolchain/bin/arm-linux-androideabi-ld",
+			ranlib	   = "/opt/android-toolchain/bin/arm-linux-androideabi-ranlib",
+			strip	   = "/opt/android-toolchain/bin/arm-linux-androideabi-strip",
+			flags      = "--sysroot=/opt/android-toolchain/sysroot/ -fno-rtti -fno-exceptions",
+			ldflags	   = "-L/opt/android-toolchain/sysroot/usr/lib",
+			cppflags = "",
+		},
 		WiiDev = {
 			cppflags    = "-MMD -MP -I$(LIBOGC_INC) $(MACHDEP)",
 			ldflags		= "-L$(LIBOGC_LIB) $(MACHDEP)",

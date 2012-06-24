@@ -45,6 +45,12 @@
 			nosharedlibs    = true,
 			namestyle       = "PS3",
 		},
+		Android = 
+		{ 
+			cfgsuffix       = "android",
+			iscrosscompiler = true,
+			namestyle       = "android",
+		},
 		WiiDev =
 		{
 			cfgsuffix       = "wii",
